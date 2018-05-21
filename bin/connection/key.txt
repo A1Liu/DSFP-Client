@@ -1,0 +1,41 @@
+Codes from Client:
+0 -- login request (with username and password)
+	Packet includes username and password
+	Server sends back error message or session id and user information
+0 - login request (with session ID)
+	Packet includes session id
+	Server sends back error message or new session id and user information
+1 -- logout
+	packet is empty
+	server sends back packet with string message
+3 -- new user request
+	Packet includes username, password, email, birthday
+	Server sends back error message or session id and user information
+
+
+
+10 -- account information refresh
+	server sends back user object
+12 - change of email request
+	packet contains email
+	server sends back error message or success message
+11 - change of username request
+	packet contains new username
+	server sends back error message or success message
+13 - change of password request
+	packet contains old password and new password
+	server sends back error message or success message
+
+
+20 - search for user
+	packet contains string
+	server sends back list of possible users based on username
+21 - other account information request
+	packet contains user identifier
+	server sends back error message or public profile user object
+22 - rate other user request
+	packet contains user identifier  and rating
+	server sends back error message or success message
+23 - friend other user request
+	packet contains user identifier
+	server sends back error message or success message
