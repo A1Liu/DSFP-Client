@@ -1,0 +1,6 @@
+server.ip=
+server.port=1100
+window.width=400
+window.height=600
+client.mode=default
+client.sessionid=
