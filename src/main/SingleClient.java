@@ -9,7 +9,6 @@ public class SingleClient extends Application {
 	public static void main(String... args) {
 		launch(args);
 		application.getConnection().disconnect();
-		
 	}
 
 	@Override
